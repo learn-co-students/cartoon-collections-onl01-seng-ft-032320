@@ -13,6 +13,12 @@ short_words.any?{|i| i.length > 4}
 end
 
 def find_the_cheese(cheese)
-    good = ["cheddar", "gouda", "camembert"]
-        cheese.detect {|i| good.include?(i)}
+  ["cheddar", "gouda", "camembert"].detect {|i| cheese.include?(i)}
 end
+
+# OR
+
+# def find_the_cheese(cheese)
+#     good = ["cheddar", "gouda", "camembert"]
+#         cheese.detect {|i| good.include?(i)}
+# end
